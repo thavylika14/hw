@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Create Account</h1>
+            <p>Sign up to get started</p>
+
+            <form>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <div class="login">
+                Already have an account?
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+CSS
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:420px;
+    padding:8px;
+    background:#4f63f5;
+    border-radius:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:22px;
+    padding:40px;
+    text-align:center;
+}
+
+h1{
+    font-size:42px;
+    color:#333;
+    margin-bottom:10px;
+}
+
+p{
+    color:#777;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus{
+    border:2px solid #5b5df5;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#5b5df5;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4a4ae8;
+}
+
+.login{
+    margin-top:25px;
+    font-size:18px;
+    color:#444;
+}
+
+.login a{
+    color:#5b5df5;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login a:hover{
+    text-decoration:underline;
+}
